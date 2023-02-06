@@ -1,0 +1,41 @@
+# Miscellaneous
+packages/*/*.class
+packages/*/*.log
+packages/*/*.pyc
+packages/*/*.swp
+packages/*/.DS_Store
+packages/*/.atom/
+packages/*/.buildlog/
+packages/*/.history
+packages/*/.svn/
+packages/*/migrate_working_dir/
+
+
+# Idea
+**/.idea/
+.idea
+
+# Melos generated files
+**/*.iml
+
+# Flutter/Dart/Pub related
+.dart_tool/
+packages/*/doc/api/
+packages/*/ios/Flutter/.last_build_id
+packages/*/.flutter-plugins
+packages/*/.flutter-plugins-dependencies
+packages/*/.packages
+packages/*.pub-cache/
+packages/*.pub/
+packages/*/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+packages/*/android/app/debug
+packages/*/android/app/profile
+packages/*/android/app/release

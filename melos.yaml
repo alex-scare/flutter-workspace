@@ -1,0 +1,42 @@
+name: flutter_workspace
+
+packages:
+  - packages/*
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+  # version:
+  #   # Generate commit links in package changelogs.
+  #   linkToCommits: true
+  #   # Only allow versioning to happen on main branch.
+  #   branch: main
+  #   # Additionally build a changelog at the root of the workspace.
+  #   workspaceChangelog: true
+
+scripts:
+  # hooks
+  preBootstrap: echo `bootstrap command is running...`
+  postBootstrap: dart pub run build_runner build
+
+  # scripts
+  analyze:
+    exec: dart analyze .
+
+  format:
+    exec: dart format .
+
+  analyze_f:
+    exec: flutter analyze
+
+  format_f:
+    exec: flutter format .
+
+  get:
+    exec: flutter pub get
+
+  package:
+    run: cd packages && dart create -t package $NAME && cd ..
+    env:
+      NAME: "package_name"
