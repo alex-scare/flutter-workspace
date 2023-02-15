@@ -1,19 +1,19 @@
 import 'package:hive/hive.dart';
 
-part 'mood.g.dart';
+part 'likert_scale.g.dart';
 
 @HiveType(typeId: 1)
-class Mood extends HiveObject {
+class LikertScale extends HiveObject {
   @HiveField(0)
-  final MoodType type;
+  final LikertScaleValue scale;
 
-  Mood({
-    required this.type,
+  LikertScale({
+    required this.scale,
   });
 }
 
 @HiveType(typeId: 2)
-enum MoodType {
+enum LikertScaleValue {
   @HiveField(0)
   stronglyDisagree(-2),
   @HiveField(1)
@@ -25,7 +25,7 @@ enum MoodType {
   @HiveField(4)
   stronglyAgree(2);
 
-  const MoodType(this.value);
+  const LikertScaleValue(this.value);
 
   final int value;
 }

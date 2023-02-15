@@ -1,4 +1,4 @@
-import 'package:feelflow/models/mood/mood.dart';
+import 'package:feelflow/models/mood/likert_scale.dart';
 import 'package:hive/hive.dart';
 import 'package:helpers/helpers.dart';
 
@@ -12,11 +12,11 @@ class Day extends HiveObject {
   @HiveField(1)
   final DateTime date;
   @HiveField(2)
-  final Mood mood;
+  final LikertScale scale;
 
   Day({
     required this.date,
-    required this.mood,
+    required this.scale,
   }) {
     key = date.truncate().toDateString();
   }

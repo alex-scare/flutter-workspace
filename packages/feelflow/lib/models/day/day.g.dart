@@ -18,7 +18,7 @@ class DayAdapter extends TypeAdapter<Day> {
     };
     return Day(
       date: fields[1] as DateTime,
-      mood: fields[2] as Mood,
+      scale: fields[2] as LikertScale,
     )..key = fields[0] as String;
   }
 
@@ -31,7 +31,7 @@ class DayAdapter extends TypeAdapter<Day> {
       ..writeByte(1)
       ..write(obj.date)
       ..writeByte(2)
-      ..write(obj.mood);
+      ..write(obj.scale);
   }
 
   @override

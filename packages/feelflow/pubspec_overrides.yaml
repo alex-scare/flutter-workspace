@@ -1,6 +1,8 @@
-# melos_managed_dependency_overrides: ui_kit,helpers
+# melos_managed_dependency_overrides: ui_kit,helpers,image_animated_grid
 dependency_overrides:
   helpers:
     path: ../helpers
+  image_animated_grid:
+    path: ../image_animated_grid
   ui_kit:
     path: ../ui_kit

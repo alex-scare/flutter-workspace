@@ -1,32 +1,32 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'mood.dart';
+part of 'likert_scale.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class MoodAdapter extends TypeAdapter<Mood> {
+class MoodAdapter extends TypeAdapter<LikertScale> {
   @override
   final int typeId = 1;
 
   @override
-  Mood read(BinaryReader reader) {
+  LikertScale read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return Mood(
-      type: fields[0] as MoodType,
+    return LikertScale(
+      scale: fields[0] as LikertScaleValue,
     );
   }
 
   @override
-  void write(BinaryWriter writer, Mood obj) {
+  void write(BinaryWriter writer, LikertScale obj) {
     writer
       ..writeByte(1)
       ..writeByte(0)
-      ..write(obj.type);
+      ..write(obj.scale);
   }
 
   @override
@@ -40,44 +40,44 @@ class MoodAdapter extends TypeAdapter<Mood> {
           typeId == other.typeId;
 }
 
-class MoodTypeAdapter extends TypeAdapter<MoodType> {
+class MoodTypeAdapter extends TypeAdapter<LikertScaleValue> {
   @override
   final int typeId = 2;
 
   @override
-  MoodType read(BinaryReader reader) {
+  LikertScaleValue read(BinaryReader reader) {
     switch (reader.readByte()) {
       case 0:
-        return MoodType.stronglyDisagree;
+        return LikertScaleValue.stronglyDisagree;
       case 1:
-        return MoodType.disagree;
+        return LikertScaleValue.disagree;
       case 2:
-        return MoodType.neutral;
+        return LikertScaleValue.neutral;
       case 3:
-        return MoodType.agree;
+        return LikertScaleValue.agree;
       case 4:
-        return MoodType.stronglyAgree;
+        return LikertScaleValue.stronglyAgree;
       default:
-        return MoodType.stronglyDisagree;
+        return LikertScaleValue.stronglyDisagree;
     }
   }
 
   @override
-  void write(BinaryWriter writer, MoodType obj) {
+  void write(BinaryWriter writer, LikertScaleValue obj) {
     switch (obj) {
-      case MoodType.stronglyDisagree:
+      case LikertScaleValue.stronglyDisagree:
         writer.writeByte(0);
         break;
-      case MoodType.disagree:
+      case LikertScaleValue.disagree:
         writer.writeByte(1);
         break;
-      case MoodType.neutral:
+      case LikertScaleValue.neutral:
         writer.writeByte(2);
         break;
-      case MoodType.agree:
+      case LikertScaleValue.agree:
         writer.writeByte(3);
         break;
-      case MoodType.stronglyAgree:
+      case LikertScaleValue.stronglyAgree:
         writer.writeByte(4);
         break;
     }
