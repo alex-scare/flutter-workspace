@@ -45,6 +45,7 @@ class HomeScreen extends HookWidget {
                   Column(
                     children: [
                       const ImageAnimatedGrid(
+                        fullScreenTitle: 'Day name',
                         images: [
                           'https://images.immediate.co.uk/production/volatile/sites/4/2021/08/mountains-7ddde89.jpg',
                           'https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg',
