@@ -1,0 +1,4 @@
+[submodule "inspire"]
+	path = packages/inspire
+	url = git@github.com:alex-scare/inspire.git
+	ignore = all
