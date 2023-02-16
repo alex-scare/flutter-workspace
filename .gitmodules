@@ -6,3 +6,6 @@
 	path = packages/image_grid_view
 	url = git@github.com:alex-scare/image_grid_view.git
 	ignore = all
+[submodule "packages/image_grid_view"]
+	path = packages/image_grid_view
+	url = git@github.com:alex-scare/image-grid-view.git
