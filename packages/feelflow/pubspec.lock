@@ -323,7 +323,7 @@ packages:
       path: "../image_grid_view"
       relative: true
     source: path
-    version: "1.0.0"
+    version: "0.1.0"
   intl:
     dependency: transitive
     description:
