@@ -2,7 +2,7 @@
 dependency_overrides:
   helpers:
     path: ../helpers
-  image_animated_grid:
-    path: ../image_animated_grid
+  image_grid_view:
+    path: ../image_grid_view
   ui_kit:
     path: ../ui_kit

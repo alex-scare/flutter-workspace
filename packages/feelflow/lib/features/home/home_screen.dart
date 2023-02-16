@@ -4,7 +4,7 @@ import 'package:feelflow/models/mood/likert_scale.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:helpers/helpers.dart';
-import 'package:image_animated_grid/image_animated_grid.dart';
+import 'package:image_grid_view/image_grid_view.dart';
 import 'package:styled_widget/styled_widget.dart';
 
 class HomeScreen extends HookWidget {
@@ -43,7 +43,7 @@ class HomeScreen extends HookWidget {
                   LikertRadio(value: value).padding(left: 10, right: 20),
                   Column(
                     children: [
-                      const ImageAnimatedGrid(
+                      const ImageGridView(
                         fullScreenTitle: 'Day name',
                         images: [
                           'https://images.immediate.co.uk/production/volatile/sites/4/2021/08/mountains-7ddde89.jpg',

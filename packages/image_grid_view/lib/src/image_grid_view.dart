@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_layout_grid/flutter_layout_grid.dart';
-import 'package:image_animated_grid/src/fulscreen_viewer.dart';
-import 'package:image_animated_grid/src/grid_image_item.dart';
-import 'package:image_animated_grid/src/last_item.dart';
-import 'package:image_animated_grid/src/presets.dart';
+import 'package:image_grid_view/src/fulscreen_viewer.dart';
+import 'package:image_grid_view/src/grid_image_item.dart';
+import 'package:image_grid_view/src/last_item.dart';
+import 'package:image_grid_view/src/presets.dart';
 import 'package:styled_widget/styled_widget.dart';
 
 /// A widget that displays a grid of images with an option to view the images full screen.
-class ImageAnimatedGrid extends HookWidget {
+class ImageGridView extends HookWidget {
   /// Creates a grid of images with an option to view the images full screen.
   ///
   /// The `images` parameter is a list of URLs for the images to display. The `fullScreenTitle` parameter
   /// specifies the title to display in the app bar when an image is viewed full screen.
-  const ImageAnimatedGrid({
+  const ImageGridView({
     Key? key,
     required this.images,
     required this.fullScreenTitle,

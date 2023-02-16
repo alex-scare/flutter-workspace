@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:image_animated_grid/src/grid_image_item.dart';
+import 'package:image_grid_view/src/grid_image_item.dart';
 import 'package:styled_widget/styled_widget.dart';
 
 /// A widget that displays the last item in a grid of images, along with a count of any additional images.

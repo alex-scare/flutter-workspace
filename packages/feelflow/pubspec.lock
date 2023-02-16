@@ -317,10 +317,10 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.2"
-  image_animated_grid:
+  image_grid_view:
     dependency: "direct main"
     description:
-      path: "../image_animated_grid"
+      path: "../image_grid_view"
       relative: true
     source: path
     version: "1.0.0"
