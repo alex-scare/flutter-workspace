@@ -36,6 +36,8 @@ scripts:
   get:
     exec: flutter pub get
 
+  init: git submodule init && git submodule update
+
   package:
     run: cd packages && dart create -t package $NAME && cd ..
     env:
