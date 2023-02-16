@@ -1,3 +1,4 @@
+/// A `Map` that defines grid layouts for various image counts.
 const presets = {
   1: '''
     one one one one one one

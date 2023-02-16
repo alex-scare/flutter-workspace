@@ -31,6 +31,7 @@ class FullScreenViewer extends HookWidget {
     var currentPageIndex = useState(initialPage + 1);
     var pageController = PageController(initialPage: initialPage);
 
+    // Disposes of the page controller when the widget is removed from the tree.
     useEffect(() => () => pageController.dispose());
 
     return Scaffold(

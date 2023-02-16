@@ -7,22 +7,37 @@ import 'package:image_animated_grid/src/last_item.dart';
 import 'package:image_animated_grid/src/presets.dart';
 import 'package:styled_widget/styled_widget.dart';
 
+/// A widget that displays a grid of images with an option to view the images full screen.
 class ImageAnimatedGrid extends HookWidget {
+  /// Creates a grid of images with an option to view the images full screen.
+  ///
+  /// The `images` parameter is a list of URLs for the images to display. The `fullScreenTitle` parameter
+  /// specifies the title to display in the app bar when an image is viewed full screen.
   const ImageAnimatedGrid({
     Key? key,
     required this.images,
     required this.fullScreenTitle,
   }) : super(key: key);
 
-  /// Max length of [images] is 9 for now. Pass List of images url.
+  /// The URLs of the images to display in the grid.
+  ///
+  /// The maximum length of visible `images` in grid is 9.
+  /// Other images will be displayed in the last item as counter.
   final List<String> images;
+
+  /// The title to display in the app bar when an image is viewed full screen.
   final String fullScreenTitle;
 
   @override
   Widget build(BuildContext context) {
+    if (images.isEmpty) {
+      return Container();
+    }
+
     var mainImages = useState<List<String>>([]);
     var otherImages = useState<List<String>>([]);
 
+    // Separates the list of images into two lists: `mainImages` and `otherImages`.
     useEffect(() {
       var delimiterIndex = images.length > 9 ? 9 : images.length;
       mainImages.value = images.sublist(0, delimiterIndex);
@@ -70,8 +85,10 @@ class ImageAnimatedGrid extends HookWidget {
   }
 }
 
+/// An enumeration of the types of `ImageAnimatedGrid`.
 enum ImageAnimatedGridType { link }
 
+/// Names for matching the grid positions.
 const gridPositionName = [
   'one',
   'two',
