@@ -63,10 +63,7 @@ FocusedDayBuilder cellBuilder = (
 ) {
   return Container(
     clipBehavior: Clip.hardEdge,
-    decoration: const BoxDecoration(
-      // color: context.colors.primaryContainer,
-      shape: BoxShape.circle,
-    ),
+    decoration: const BoxDecoration(shape: BoxShape.circle),
     child: Center(
       child: Text(
         '${day.day}',

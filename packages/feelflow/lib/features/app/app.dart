@@ -9,12 +9,27 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const pageTransition = PageTransitionsTheme(
+      builders: <TargetPlatform, PageTransitionsBuilder>{
+        TargetPlatform.iOS: ZoomPageTransitionsBuilder(),
+        TargetPlatform.android: ZoomPageTransitionsBuilder(),
+      },
+    );
+
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'FeelFlow',
       themeMode: ThemeMode.system,
-      theme: FlexThemeData.light(scheme: theme, useMaterial3: true),
-      darkTheme: FlexThemeData.dark(scheme: theme, useMaterial3: true),
+      theme: FlexThemeData.light(
+        scheme: theme,
+        useMaterial3: true,
+        pageTransitionsTheme: pageTransition,
+      ),
+      darkTheme: FlexThemeData.dark(
+        scheme: theme,
+        useMaterial3: true,
+        pageTransitionsTheme: pageTransition,
+      ),
       routerConfig: Navigation.router,
     );
   }

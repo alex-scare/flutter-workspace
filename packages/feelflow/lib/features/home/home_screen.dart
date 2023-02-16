@@ -21,7 +21,6 @@ class HomeScreen extends HookWidget {
       body: Stack(
         children: [
           Container()
-              .expanded()
               .backgroundRadialGradient(
                 colors: [
                   scaleColorsMap[value.value]!.withOpacity(0.1),

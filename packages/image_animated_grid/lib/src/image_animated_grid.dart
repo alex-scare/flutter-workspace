@@ -43,7 +43,7 @@ class ImageAnimatedGrid extends HookWidget {
       mainImages.value = images.sublist(0, delimiterIndex);
 
       if (images.length > delimiterIndex) {
-        otherImages.value = images.sublist(delimiterIndex + 1);
+        otherImages.value = images.sublist(delimiterIndex);
       }
       return null;
     }, [images]);
