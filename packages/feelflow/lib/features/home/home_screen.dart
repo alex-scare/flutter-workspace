@@ -43,9 +43,9 @@ class HomeScreen extends HookWidget {
                   LikertRadio(value: value).padding(left: 10, right: 20),
                   Column(
                     children: [
-                      const ImageGridView(
+                      ImageGridView(
                         fullScreenTitle: 'Day name',
-                        images: [
+                        images: const [
                           'https://images.immediate.co.uk/production/volatile/sites/4/2021/08/mountains-7ddde89.jpg',
                           'https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg',
                           'https://i.natgeofe.com/k/830b5d15-92db-429f-a80a-cc89b5700af5/mt-everest.jpg?w=636&h=437',
