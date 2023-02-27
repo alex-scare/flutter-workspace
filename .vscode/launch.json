@@ -30,6 +30,26 @@
       "flutterMode": "release"
     },
     {
+      "name": "inspire",
+      "cwd": "packages/inspire",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "inspire (profile mode)",
+      "cwd": "packages/inspire",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "inspire (release mode)",
+      "cwd": "packages/inspire",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
       "name": "lint_rules",
       "cwd": "packages/lint_rules",
       "request": "launch",
