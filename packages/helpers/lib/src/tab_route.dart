@@ -5,8 +5,6 @@ import 'package:helpers/helpers.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:styled_widget/styled_widget.dart';
 
-import './navigation.dart';
-
 class TabRoutesScaffold extends HookWidget {
   const TabRoutesScaffold({
     super.key,

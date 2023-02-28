@@ -8,7 +8,7 @@ class HomeScreen extends HookWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Home'),
+        child: Text('Home1'),
       ),
       appBar: AppBar(
         title: const Text('Home'),

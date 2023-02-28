@@ -7,19 +7,21 @@ import 'package:helpers/helpers.dart';
 enum RouteName { home, settings }
 
 var navigation = AppNavigation(
-  shellRoutesMap: {
-    RouteName.home: AppRoute(
+  shellRoutes: [
+    AppRoute(
       path: '/',
       screen: const HomeScreen(),
       icon: LineIcons.home,
-      name: 'Home',
+      name: 'home',
+      label: 'Home',
     ),
-    RouteName.settings: AppRoute(
+    AppRoute(
       path: '/settings',
       screen: const SettingScreen(),
       icon: LineIcons.cog,
-      name: 'Settings',
+      name: 'settings',
+      label: 'Settings',
     ),
-  },
+  ],
   initialLocation: '/',
 );
