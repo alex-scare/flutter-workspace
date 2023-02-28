@@ -30,7 +30,7 @@ class App extends StatelessWidget {
         useMaterial3: true,
         pageTransitionsTheme: pageTransition,
       ),
-      routerConfig: Navigation.router,
+      routerConfig: navigation.router,
     );
   }
 }

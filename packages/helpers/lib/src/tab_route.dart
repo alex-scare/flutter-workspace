@@ -30,10 +30,10 @@ class TabRoutesScaffold extends HookWidget {
         currentIndex: currentIndex.value,
         onTap: (index) {
           currentIndex.value = index;
-          context.go(Navigation.routes[index].path);
+          context.go(routes[index].path);
         },
         itemPadding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-        items: Navigation.routes.map((route) => route.tab).toList(),
+        items: routes.map((route) => route.tab).toList(),
       ).backgroundColor(context.colors.background),
       body: child,
     );
