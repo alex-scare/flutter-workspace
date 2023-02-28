@@ -4,31 +4,34 @@ import 'package:helpers/src/tab_route.dart';
 
 class AppNavigation<TRouteName> {
   AppNavigation({
-    required this.shellRoutesMap,
+    this.shellRoutesMap = const {},
+    this.routesMap = const {},
     required this.initialLocation,
   }) {
     router = GoRouter(
       initialLocation: initialLocation,
       routes: [
-        ShellRoute(
-          builder: (context, state, child) {
-            return TabRoutesScaffold(
-              location: state.location,
-              routes: shellRoutes,
-              child: child,
-            );
-          },
-          routes: shellRoutes.map((route) => route.go).toList(),
-        ),
+        if (shellRoutesMap.values.isNotEmpty)
+          ShellRoute(
+            builder: (context, state, child) {
+              return TabRoutesScaffold(
+                location: state.location,
+                routes: shellRoutes,
+                child: child,
+              );
+            },
+            routes: shellRoutes.map((route) => route.go).toList(),
+          ),
+        ...routesMap.values.map((route) => route.go).toList(),
       ],
     );
   }
 
   final Map<TRouteName, AppRoute> shellRoutesMap;
+  final Map<TRouteName, AppRoute> routesMap;
   final String initialLocation;
   late GoRouter router;
 
-  /// A list of all the routes in the navigation system.
   List<AppRoute> get shellRoutes => shellRoutesMap.values.toList();
 }
 

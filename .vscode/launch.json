@@ -50,44 +50,24 @@
       "flutterMode": "release"
     },
     {
-      "name": "lint_rules",
-      "cwd": "packages/lint_rules",
+      "name": "flavourites",
+      "cwd": "packages/flavourites",
       "request": "launch",
       "type": "dart"
     },
     {
-      "name": "lint_rules (profile mode)",
-      "cwd": "packages/lint_rules",
+      "name": "flavourites (profile mode)",
+      "cwd": "packages/flavourites",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
-      "name": "lint_rules (release mode)",
-      "cwd": "packages/lint_rules",
+      "name": "flavourites (release mode)",
+      "cwd": "packages/flavourites",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
     },
-    {
-      "name": "ui_kit",
-      "cwd": "packages/ui_kit",
-      "request": "launch",
-      "type": "dart"
-    },
-    {
-      "name": "ui_kit (profile mode)",
-      "cwd": "packages/ui_kit",
-      "request": "launch",
-      "type": "dart",
-      "flutterMode": "profile"
-    },
-    {
-      "name": "ui_kit (release mode)",
-      "cwd": "packages/ui_kit",
-      "request": "launch",
-      "type": "dart",
-      "flutterMode": "release"
-    }
   ]
 }

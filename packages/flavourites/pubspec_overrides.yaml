@@ -1,0 +1,8 @@
+# melos_managed_dependency_overrides: helpers,image_grid_view,ui_kit
+dependency_overrides:
+  helpers:
+    path: ../helpers
+  image_grid_view:
+    path: ../image_grid_view
+  ui_kit:
+    path: ../ui_kit
