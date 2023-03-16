@@ -69,5 +69,25 @@
       "type": "dart",
       "flutterMode": "release"
     },
+    {
+      "name": "another_life",
+      "cwd": "packages/another_life",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "another_life (profile mode)",
+      "cwd": "packages/another_life",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "another_life (release mode)",
+      "cwd": "packages/another_life",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
   ]
 }
