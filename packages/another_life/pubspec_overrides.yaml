@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: helpers,ui_kit
+dependency_overrides:
+  helpers:
+    path: ../helpers
+  ui_kit:
+    path: ../ui_kit
