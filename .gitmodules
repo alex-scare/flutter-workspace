@@ -5,3 +5,6 @@
 [submodule "image_grid_view"]
 	path = packages/image_grid_view
 	url = git@github.com:alex-scare/image-grid-view.git
+[submodule "talk_gpt"]
+  path = packages/talk_gpt
+	url = git@github.com/alex-scare/TalkGPT.git

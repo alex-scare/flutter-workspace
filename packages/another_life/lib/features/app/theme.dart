@@ -13,10 +13,10 @@ class AppTheme {
       useMaterial3: true,
       pageTransitionsTheme: pageTransition,
       colorScheme: const ColorScheme.light(
-        primary: Color(0x005854A8),
-        secondary: Color(0x00006C4F),
-        background: Color(0x00FFFBFF),
-        onBackground: Color(0x003E0021),
+        primary: Color(0xFF5854A8),
+        secondary: Color(0xFF006C4F),
+        background: Color(0xFFFFFBFF),
+        onBackground: Color(0xFF3E0021),
       ),
     );
 
@@ -24,10 +24,10 @@ class AppTheme {
       useMaterial3: true,
       pageTransitionsTheme: pageTransition,
       colorScheme: const ColorScheme.dark(
-        primary: Color(0x00C3C0FF),
-        secondary: Color(0x0068DBB0),
-        background: Color(0x003E0021),
-        onBackground: Color(0x00FFD9E4),
+        primary: Color(0xFFC3C0FF),
+        secondary: Color(0xFF68DBB0),
+        background: Color(0xFF3E0021),
+        onBackground: Color(0xFFFFD9E4),
       ),
     );
   }
