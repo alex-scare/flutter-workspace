@@ -36,7 +36,9 @@ scripts:
   get:
     exec: flutter pub get
 
-  init: git submodule init && git submodule update
+  gitinit: git submodule init && git submodule update
+
+  locale_keys: dart scripts/generate_locale_keys.dart
 
   package:
     run: cd packages && dart create -t package $NAME && cd ..

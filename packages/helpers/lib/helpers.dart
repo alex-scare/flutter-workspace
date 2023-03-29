@@ -6,3 +6,5 @@ library helpers;
 export 'src/date.dart';
 export 'src/theme.dart';
 export 'src/navigation.dart';
+
+export 'i10n/i10n.dart';
