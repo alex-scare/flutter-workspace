@@ -73,23 +73,22 @@ String generateClass(Set<String> keys) {
 
 generateL10nKeysFile(Directory dir) {
   print(dir.path);
-  final jsonFiles = Directory('${dir.path}/data/en_US')
+  final jsonFiles = Directory('${dir.path}/l10n/en_US')
       .listSync()
       .where((file) => file.path.endsWith('.json'))
       .map((file) => file.path)
       .toList();
 
-  generateKeys(jsonFiles, '${dir.path}/locale.g.dart');
+  generateKeys(jsonFiles, '${dir.path}/lib/shared/l10n_key.g.dart');
 }
 
 void main() {
-  final commonLocalesPath = 'lib/shared/l10n';
+  final commonLocalesPath = 'l10n';
 
   Directory('packages')
       .listSync()
       .whereType<Directory>()
-      .where((dir) => dir.hasNestedDirWithPath('/$commonLocalesPath'))
-      .map((dir) => Directory('${dir.path}/$commonLocalesPath'))
+      .where((dir) => dir.hasNestedDirWithPath('$commonLocalesPath'))
       .forEach((dir) => generateL10nKeysFile(dir));
 }
 

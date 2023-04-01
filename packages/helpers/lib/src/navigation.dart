@@ -4,9 +4,9 @@ import 'package:helpers/src/tab_route.dart';
 
 class AppNavigation<TRouteName> {
   AppNavigation({
-    this.shellRoutes = const [],
-    this.routes = const [],
-    required this.initialLocation,
+    List<AppRoute> shellRoutes = const [],
+    List<AppRoute> routes = const [],
+    String initialLocation = '/',
   }) {
     router = GoRouter(
       initialLocation: initialLocation,
@@ -27,27 +27,33 @@ class AppNavigation<TRouteName> {
     );
   }
 
-  final List<AppRoute> shellRoutes;
-  final List<AppRoute> routes;
-  final String initialLocation;
   late GoRouter router;
 }
 
 class AppRoute {
   final String path;
   final Widget screen;
-  final IconData icon;
+  final IconData? icon;
   final String label;
   final String name;
+  final bool requiresAuth;
 
   AppRoute({
     required this.path,
     required this.screen,
+    required this.name,
+    this.requiresAuth = false,
+  })  : label = '',
+        icon = null;
+
+  AppRoute.shell({
+    required this.path,
+    required this.screen,
     required this.icon,
     required this.name,
-    required this.label,
+    this.label = '',
+    this.requiresAuth = false,
   });
 
-  /// A `GoRoute` object that represents the route for the `GoRouter`.
   GoRoute get go => GoRoute(path: path, builder: (_, __) => screen, name: name);
 }

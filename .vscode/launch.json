@@ -89,5 +89,25 @@
       "type": "dart",
       "flutterMode": "release"
     },
+    {
+      "name": "talk_gpt",
+      "cwd": "packages/talk_gpt",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "talk_gpt (profile mode)",
+      "cwd": "packages/talk_gpt",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "talk_gpt (release mode)",
+      "cwd": "packages/talk_gpt",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
   ]
 }

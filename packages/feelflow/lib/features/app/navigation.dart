@@ -8,14 +8,14 @@ enum RouteName { home, settings }
 
 var navigation = AppNavigation(
   shellRoutes: [
-    AppRoute(
+    AppRoute.shell(
       path: '/',
       screen: const HomeScreen(),
       icon: LineIcons.home,
       name: 'home',
       label: 'Home',
     ),
-    AppRoute(
+    AppRoute.shell(
       path: '/settings',
       screen: const SettingScreen(),
       icon: LineIcons.cog,

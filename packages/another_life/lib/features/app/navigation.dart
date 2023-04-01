@@ -3,8 +3,8 @@ import 'package:line_icons/line_icons.dart';
 import 'package:helpers/helpers.dart';
 
 var navigation = AppNavigation(
-  routes: [
-    AppRoute(
+  shellRoutes: [
+    AppRoute.shell(
       path: '/',
       screen: const HomeScreen(),
       icon: LineIcons.home,
