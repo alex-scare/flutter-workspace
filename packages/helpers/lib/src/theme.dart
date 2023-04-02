@@ -7,5 +7,6 @@ extension ThemeExtensions on BuildContext {
   }
 
   ThemeData get theme => Theme.of(this);
+  TextTheme get text => theme.textTheme;
   ColorScheme get colors => theme.colorScheme;
 }
