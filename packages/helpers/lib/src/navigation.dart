@@ -7,8 +7,10 @@ class AppNavigation<TRouteName> {
     List<AppRoute> shellRoutes = const [],
     List<AppRoute> routes = const [],
     String initialLocation = '/',
+    GlobalKey<NavigatorState>? navigatorKey,
   }) {
     router = GoRouter(
+      navigatorKey: navigatorKey,
       initialLocation: initialLocation,
       routes: [
         if (shellRoutes.isNotEmpty)
