@@ -8,3 +8,6 @@
 [submodule "talk_gpt"]
   path = packages/talk_gpt
 	url = git@github.com/alex-scare/TalkGPT.git
+[submodule "dart_openai_api"]
+	path = packages/dart_openai_api
+	url =git@github/alex-scare/dart_openai_api.git

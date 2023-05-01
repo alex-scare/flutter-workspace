@@ -16,7 +16,7 @@ packages/*/migrate_working_dir/
 .idea
 
 # Melos generated files
-**/*.iml
+**/melos*.iml
 
 # Flutter/Dart/Pub related
 .dart_tool/
