@@ -11,3 +11,6 @@
 [submodule "dart_openai_api"]
 	path = packages/dart_openai_api
 	url =git@github/alex-scare/dart_openai_api.git
+[submodule "packages/lines"]
+	path = packages/lines
+	url = https://github.com/alex-scare/lines.git
