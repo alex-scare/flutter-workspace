@@ -31,5 +31,22 @@ class L10n {
 }
 
 extension BuildContextExt on BuildContext {
-  get t => I18Next.of(this)?.t;
+  String t(
+    String key, {
+    Locale? locale,
+    String? context,
+    int? count,
+    Map<String, dynamic>? variables,
+    I18NextOptions? options,
+    String Function(String)? orElse,
+  }) =>
+      I18Next.of(this)!.t(
+        key,
+        locale: locale,
+        context: context,
+        count: count,
+        variables: variables,
+        options: options,
+        orElse: orElse,
+      );
 }
