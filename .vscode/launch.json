@@ -109,5 +109,11 @@
       "type": "dart",
       "flutterMode": "release"
     },
+    {
+      "name": "lines",
+      "cwd": "packages/lines",
+      "request": "launch",
+      "type": "dart"
+    }
   ]
 }
