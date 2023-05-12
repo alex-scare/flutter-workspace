@@ -32,7 +32,7 @@ class TabRoutesScaffold extends HookWidget {
         },
         itemPadding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
         items: routes.map((route) => route.tab).toList(),
-      ).backgroundColor(context.colors.background),
+      ).decorated().backgroundColor(context.colors.background),
       body: child,
     );
   }
