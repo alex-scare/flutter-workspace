@@ -1,7 +1,4 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
@@ -110,10 +107,20 @@
       "flutterMode": "release"
     },
     {
-      "name": "lines",
+      "name": "lines (pixel)",
       "cwd": "packages/lines",
       "request": "launch",
-      "type": "dart"
-    }
+      "type": "dart",
+      "flutterMode": "debug",
+      "deviceId": "emulator-5554"
+    },
+    {
+      "name": "lines (iphone 13 mini)",
+      "cwd": "packages/lines",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "deviceId": "F613EEC8-2F0F-4579-BA5C-0A7C2C737B6C"
+    },
   ]
 }
